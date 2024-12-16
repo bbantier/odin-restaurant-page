@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Helvetica", "Tahoma", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+nav > button {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+#content {
+  max-height: calc(100% - 55px);
+  overflow: hidden;
+}
+
+#content > img {
+  width: 100vw;
+  max-height: 100%;
+}
+
+#home-title,
+#home-paragraph {
+  padding: 10px 20px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  text-align: center;
+}
+
+#home-title {
+  font-family: 'Imperial Script';
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 0;
+  top: 15%;
+}
+
+#home-paragraph {
+  font-size: 1.2rem;
+  top: calc(15% + 20px + 3rem);
+}

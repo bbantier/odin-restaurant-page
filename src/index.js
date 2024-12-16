@@ -1,6 +1,8 @@
 import { homeContent } from "./homeTab";
 import { menuContent } from "./menuTab";
+import "./style.css";
 
+const homeButton = document.querySelector("#home-button");
 const menuButton = document.querySelector("#menu-button");
 
 const clearContentDiv = () => {
@@ -12,6 +14,11 @@ const clearContentDiv = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  homeContent();
+});
+
+homeButton.addEventListener("click", () => {
+  clearContentDiv();
   homeContent();
 });
 

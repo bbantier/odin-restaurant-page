@@ -12,13 +12,15 @@ const homeContent = () => {
 
   const createTitle = () => {
     const welcomeTitle = document.createElement("h1");
+    welcomeTitle.id = "home-title";
     welcomeTitle.textContent = "White Coat Restaurant";
     return welcomeTitle;
   };
 
   const createParagraph = () => {
     const welcomeParagraph = document.createElement("p");
-    welcomeParagraph.textContent = "You'll never want to leave.";
+    welcomeParagraph.id = "home-paragraph";
+    welcomeParagraph.textContent = "A laboratory for taste.";
     return welcomeParagraph;
   };
 
