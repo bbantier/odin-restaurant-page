@@ -27,8 +27,10 @@ const menuContent = () => {
 
   for (let element of pageElements) {
     const el = document.createElement(element.tag);
+
     el.setAttribute("id", element.id);
     el.textContent = element.text;
+
     contentDiv.appendChild(el);
   }
 
