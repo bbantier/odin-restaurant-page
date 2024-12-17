@@ -1,9 +1,11 @@
 import { homeContent } from "./homeTab";
 import { menuContent } from "./menuTab";
+import { aboutContent } from "./aboutTab";
 import "./style.css";
 
 const homeButton = document.querySelector("#home-button");
 const menuButton = document.querySelector("#menu-button");
+const aboutButton = document.querySelector("#about-button");
 
 const clearContentDiv = () => {
   const contentDiv = document.querySelector("#content");
@@ -25,4 +27,9 @@ homeButton.addEventListener("click", () => {
 menuButton.addEventListener("click", () => {
   clearContentDiv();
   menuContent();
+});
+
+aboutButton.addEventListener("click", () => {
+  clearContentDiv();
+  aboutContent();
 });

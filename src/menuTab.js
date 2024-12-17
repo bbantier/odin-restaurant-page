@@ -1,8 +1,8 @@
 const menuContent = () => {
   const menuItems = [
-    ["Veal chop", 65],
-    ["Pork belly", 45],
-    ["Purée du Chef", 20],
+    ["Veal Medallions with Peppercorn Reduction", 65],
+    ["Pork Belly Confit with Cauliflower and Potato Dauphinoise", 45],
+    ["Fondant de Pommes de Terre au Roquefort", 20],
     ["Chateau Lapompe", 25, true],
     ["Mont Blanc water", 10, true],
   ];
